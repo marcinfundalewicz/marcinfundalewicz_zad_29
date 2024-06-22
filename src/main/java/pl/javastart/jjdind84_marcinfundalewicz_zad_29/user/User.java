@@ -3,11 +3,11 @@ package pl.javastart.jjdind84_marcinfundalewicz_zad_29.user;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
-import pl.javastart.jjdind84_marcinfundalewicz_zad_29.role.Role;
 
 @Getter
 @Setter
 @Entity
+@Table(name = "app_user")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

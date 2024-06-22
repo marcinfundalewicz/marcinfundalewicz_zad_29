@@ -24,7 +24,7 @@ public class SecurityConfig {
                 .requestMatchers(AntPathRequestMatcher.antMatcher("/h2-console/**")).permitAll()
                 .requestMatchers(mvcMatcherBuilder.pattern("/")).permitAll()
                 .requestMatchers(mvcMatcherBuilder.pattern("/register")).permitAll()
-                .requestMatchers(mvcMatcherBuilder.pattern("/admin/**")).hasRole("ROLE_ADMIN")
+                .requestMatchers(mvcMatcherBuilder.pattern("/admin/**")).hasRole("ADMIN")
                 .anyRequest().authenticated());
         http.csrf(config -> config.ignoringRequestMatchers(toH2Console()));
         http.formLogin(login -> login.loginPage("/login").permitAll());

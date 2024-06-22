@@ -6,7 +6,6 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import pl.javastart.jjdind84_marcinfundalewicz_zad_29.register.RegisterUserDto;
-import pl.javastart.jjdind84_marcinfundalewicz_zad_29.role.Role;
 
 import java.util.*;
 import java.util.stream.Collectors;

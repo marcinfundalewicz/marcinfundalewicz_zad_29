@@ -4,15 +4,28 @@
     <meta charset="UTF-8">
     <title>Strona główna</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        img {
+            width: 50%;
+            height: 50%;
+        }
+    </style>
 </head>
 <body>
 <div class="container">
     <h1>Witaj na stronie głównej</h1>
+    <img src="https://media.licdn.com/dms/image/C4E12AQG9PzLTPHvRVA/article-cover_image-shrink_720_1280/0/1615137890447?e=1724284800&v=beta&t=ZmqAwNvlnwVw3dkV5wqrOMc78HWeI6L9AEqxqchYcQU">
     <a sec:authorize="!isAuthenticated()" th:href="@{/register}">Zarejestruj się</a></br>
     <a sec:authorize="!isAuthenticated()" th:href="@{/login}">Zaloguj się</a></br>
     <a sec:authorize="isAuthenticated()" th:href="@{/logout}">Wyloguj się</a></br>
     <a th:href="@{/updateUser}">Zaktualizuj dane</a></br></br>
-    <a sec:authorize="hasRole('ROLE_ADMIN')" th:href="@{/admin}">Panel administratora</a>
+    <a sec:authorize="hasRole('ADMIN')" th:href="@{/admin}">Panel administratora</a>
 </div>
 </body>
 </html>
