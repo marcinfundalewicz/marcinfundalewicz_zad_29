@@ -50,12 +50,13 @@ public class UserService {
 
 public void updateUserData(UpdateUserDto userDto) {
     Optional<User> userOptional = getCurrentUser();
+    if (userOptional.isPresent()) {
+        User user = userOptional.get();
+        user.setFirstName(userDto.getFirstName());
+        user.setLastName(userDto.getLastName());
 
-    User user = userOptional.get();
-    user.setFirstName(userDto.getFirstName());
-    user.setLastName(userDto.getLastName());
-
-    userRepository.save(user);
+        userRepository.save(user);
+    }
 }
 
 public void updateUserPassword(String password) {

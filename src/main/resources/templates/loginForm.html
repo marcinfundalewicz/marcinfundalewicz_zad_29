@@ -28,6 +28,9 @@
 <body>
 <div class="container">
     <h2>Zaloguj się</h2>
+    <div class="container2">
+        <p th:if="${message}" style="color: red" th:text="${message}"></p>
+    </div>
     <div class="body">
         <i class="fa-solid fa-user fa-8x user-icon"></i></br>
         <form class="login-form" th:action="@{/login}" method="post">

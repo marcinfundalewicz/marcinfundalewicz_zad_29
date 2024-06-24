@@ -1,5 +1,6 @@
 package pl.javastart.jjdind84_marcinfundalewicz_zad_29.controllers;
 
+import org.springframework.boot.Banner;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -23,14 +24,16 @@ public class UserController {
     }
 
     @PostMapping("/updateUserData")
-    public String updateData(UpdateUserDto userDto) {
+    public String updateData(Model model, UpdateUserDto userDto) {
+        model.addAttribute("message", "Dane zmienione");
         userService.updateUserData(userDto);
-        return "redirect:/";
+        return "index";
     }
 
     @PostMapping("/updateUserPassword")
-    public String updatePassword(@RequestParam String password) {
+    public String updatePassword(@RequestParam String password, Model model) {
+        model.addAttribute("message", "Hasło zmienione");
         userService.updateUserPassword(password);
-        return "redirect:/";
+        return "index";
     }
 }

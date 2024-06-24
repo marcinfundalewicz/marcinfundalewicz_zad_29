@@ -39,8 +39,8 @@
         <ul th:each="user : ${users}" class="list-group list-group-horizontal">
             <li class="list-group-item number-width" th:text="${user.username}"></li>
             <div class="buttons">
-                <a th:if="${!user.isAdmin()}" th:href="@{|/admin/addAdmin/user/${user.id}|}" class="btn btn-secondary width-button">Nadaj admina</a>
-                <a th:if="${user.isAdmin()}" th:href="@{|/admin/removeAdmin/user/${user.id}|}" class="btn btn-secondary width-button">Zabierz admina</a>
+                <a th:href="@{|/admin/addAdmin/user/${user.id}|}" class="btn btn-secondary width-button">Nadaj admina</a>
+                <a th:href="@{|/admin/removeAdmin/user/${user.id}|}" class="btn btn-secondary width-button">Zabierz admina</a>
             </div>
         </ul>
         </br>

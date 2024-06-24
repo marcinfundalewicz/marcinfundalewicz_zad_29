@@ -8,11 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class LoginController {
 
     @GetMapping("/login")
-    public String login(Model model) {
-        Boolean registrationSuccess = (Boolean) model.asMap().get("registrationSuccess");
-        if (registrationSuccess != null) {
-            model.addAttribute("registrationSuccess", registrationSuccess);
-        }
+    public String login() {
         return "loginForm";
     }
 }
