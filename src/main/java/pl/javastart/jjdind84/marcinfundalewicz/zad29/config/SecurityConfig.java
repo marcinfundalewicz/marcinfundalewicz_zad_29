@@ -1,4 +1,4 @@
-package pl.javastart.jjdind84_marcinfundalewicz_zad_29.config;
+package pl.javastart.jjdind84.marcinfundalewicz.zad29.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

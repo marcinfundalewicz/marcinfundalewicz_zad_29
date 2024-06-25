@@ -1,4 +1,4 @@
-package pl.javastart.jjdind84_marcinfundalewicz_zad_29.user;
+package pl.javastart.jjdind84.marcinfundalewicz.zad29.user;
 
 
 import org.springframework.data.jpa.repository.JpaRepository;

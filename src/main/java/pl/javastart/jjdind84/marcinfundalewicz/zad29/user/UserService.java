@@ -1,11 +1,11 @@
-package pl.javastart.jjdind84_marcinfundalewicz_zad_29.user;
+package pl.javastart.jjdind84.marcinfundalewicz.zad29.user;
 
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import pl.javastart.jjdind84_marcinfundalewicz_zad_29.register.RegisterUserDto;
+import pl.javastart.jjdind84.marcinfundalewicz.zad29.register.RegisterUserDto;
 
 import java.util.*;
 import java.util.stream.Collectors;

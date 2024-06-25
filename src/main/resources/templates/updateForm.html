@@ -23,6 +23,9 @@
 <body>
 <div class="container">
     <h2>Zaktualizuj swoje dane</h2>
+    <div class="container2">
+        <p th:if="${message}" style="color: red" th:text="${message}"></p>
+    </div>
     <div class="body">
         <form class="login-form" th:action="@{/updateUserData}" th:object="${user}" method="post">
             <div class="mb-3">

@@ -1,12 +1,12 @@
-package pl.javastart.jjdind84_marcinfundalewicz_zad_29.config;
+package pl.javastart.jjdind84.marcinfundalewicz.zad29.config;
 
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
-import pl.javastart.jjdind84_marcinfundalewicz_zad_29.user.User;
-import pl.javastart.jjdind84_marcinfundalewicz_zad_29.user.UserRepository;
+import pl.javastart.jjdind84.marcinfundalewicz.zad29.user.UserRepository;
+import pl.javastart.jjdind84.marcinfundalewicz.zad29.user.User;
 
 import java.util.Optional;
 import java.util.Set;

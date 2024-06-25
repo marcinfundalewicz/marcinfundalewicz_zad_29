@@ -1,15 +1,9 @@
-package pl.javastart.jjdind84_marcinfundalewicz_zad_29.register;
+package pl.javastart.jjdind84.marcinfundalewicz.zad29.user;
 
-import lombok.Getter;
-import lombok.Setter;
-
-@Getter
-@Setter
 public class RegisterUserDto {
     private String username;
     private String firstName;
     private String lastName;
     private String password;
     private String role;
-
 }
